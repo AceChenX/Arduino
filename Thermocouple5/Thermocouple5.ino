@@ -1,7 +1,7 @@
 
 // ***** INCLUDES *****
 #include "MAX31855.h"  // Local version
-#include <Streaming.h>
+// #include <Streaming.h>
 #include <SoftwareSerial.h>
 // #include <serLCD.h>
 
@@ -132,14 +132,14 @@ void  setup()
 //  lcd.clear();
 }
 
-void  loop()
+void loop()
 {
   while(1){
     //time = millis();
     delay(delaymillis);
     // Read the temperature
     x = temp.readMAX31855(&tempTC, &tempCJC, &faultOpen, &faultShortGND, &faultShortVCC, temp_unit);
-    dtostrf(tempTC,6, 2, bufstr);
+    dtostrf(tempTC, 6, 2, bufstr);
     stringout += bufstr;
     stringout += ",";
 
