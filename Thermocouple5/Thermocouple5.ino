@@ -24,7 +24,7 @@ const  unsigned  char btn1Pin = 33;
 
 // ***** Max number of channels *****
 // Counts 0..maxcount-1
-const int maxcount = 8;
+const int maxcount = 16;
 // Circuit max is maxcount = 16
 
 int reg = 0;
